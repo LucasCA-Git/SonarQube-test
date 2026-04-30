@@ -16,7 +16,9 @@ services:
       # 🔥 ESSA PARTE É A CHAVE
       SONAR_WEB_HOST: 0.0.0.0
       SONAR_WEB_PORT: 9000
-      SONAR_CORE_SERVERBASEURL: http://143.244.149.218:8080
+      SONAR_WEB_CONTEXT: /sonar   # <-- isso é a chave do redirecionamento!
+      SONAR_CORE_SERVERBASEURL: http://143.244.149.218/sonar
+
 
     volumes:
       - sonarqube_data:/opt/sonarqube/data
